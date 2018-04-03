@@ -1,6 +1,6 @@
 pragma solidity ^0.4.21;
 
-import "../source/sagewise.sol";
+import "../../source/sagewise.sol";
 
 contract mortal is Sagewise {
     /* Define variable owner of the type address */

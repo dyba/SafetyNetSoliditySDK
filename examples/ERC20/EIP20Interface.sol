@@ -8,7 +8,7 @@ This is a modified version of the Consensys EIP20 sample contract with sagewise 
 pragma solidity ^0.4.18;
 
 import "./EIP20Interface.sol";
-import "../source/sagewise.sol";
+import "../../source/sagewise.sol";
 
 
 contract EIP20 is EIP20Interface, Sagewise {
