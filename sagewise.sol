@@ -7,8 +7,8 @@ pragma solidity ^0.4.21;
  **/
 contract Sagewise
 {
-    address private DRVendor;                       //Dispute resolution vendor address
-    bool private DRMode;                            //Are we in dispute mode?
+    address private DRVendor; //Dispute resolution vendor address
+    bool private DRMode; //Are we in dispute mode?
     mapping(address => bool) private DRActivators; //Who can start a dispute?
 
 /**
@@ -28,9 +28,18 @@ contract Sagewise
         require(true == DRMode);
         _;
     }
+    
+/**
+ * @dev Throws if called and we are in dispute resolution mode
+ **/
+    modifier notDRMode()
+    {
+        require(false == DRMode);
+        _;
+    }
 
 /**
- * @dev Throws if called by anyone but a dr mode activator
+ * @dev Throws if called by anyone but a dispute resolution mode activator
  **/
     modifier onlyDRActivator()
     {
@@ -41,9 +50,8 @@ contract Sagewise
 /**
  * @dev Set the dispute resolution vendor
  **/
-    function setDRVendor(
-        address _vendorAddress)
-        internal
+    function setDRVendor(address _vendorAddress)
+    internal
     {
         DRVendor = _vendorAddress;
     }
@@ -51,9 +59,8 @@ contract Sagewise
 /**
  * @dev Add party to dispute resolution activation list
  **/
-    function addDRActivationParty(
-        address _activationAddress)
-        internal
+    function addDRActivationParty(address _activationAddress)
+    internal
     {
         DRActivators[_activationAddress] = true;
     }
@@ -61,9 +68,8 @@ contract Sagewise
 /**
  * @dev Remove party from dispute resolution activation list
  **/
-    function removeDRActivationParty(
-        address _activationAddress)
-        internal
+    function removeDRActivationParty(address _activationAddress)
+    internal
     {
         DRActivators[_activationAddress] = false;
     }
