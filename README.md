@@ -3,6 +3,10 @@
 
 This is an alpha preview. Please only use in test contracts.
 
+## Contributing
+
+To contribute, read the [contributing documentation](docs/contributing.md)
+
 # Overview
 
 At Sagewise we are building a collection of services that will bring more confidence and better usability to smart contracts. Sagewise Solidity Safety Net Smart Contract SDK is one of those services. This alpha SDK shows a method of adding contract freeze protections onto a smart contract with a very small footprint along with delegation of dispute handling to a neutral third party who is given contract admin access. The reasons that a contracting party may wish to freeze a smart contract include the following:
