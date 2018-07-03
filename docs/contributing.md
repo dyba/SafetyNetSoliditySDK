@@ -23,5 +23,16 @@ asdf reshim nodejs 8.10.0
 Next, install [Truffle](https://truffleframework.com/):
 
 ``` bash
-npm install truffle
+npm install -g truffle ganache-cli
+asdf reshim nodejs 8.10.0
 ```
+
+## Testing
+
+To run tests:
+
+``` bash
+truffle test
+```
+
+For more on truffle assertions, see [Assert.sol](https://github.com/trufflesuite/truffle/blob/develop/packages/truffle-core/lib/testing/Assert.sol)
