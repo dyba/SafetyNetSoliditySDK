@@ -29,6 +29,12 @@ asdf reshim nodejs 8.10.0
 
 ## Testing
 
+Before you run tests, run the `ganache-cli` client:
+
+``` bash
+ganache-cli
+```
+
 To run tests:
 
 ``` bash
