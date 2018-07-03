@@ -17,6 +17,7 @@ Move to the directory in which you've clone this repository and set the version 
 
 ``` bash
 asdf local nodejs 8.10.0
+asdf reshim nodejs 8.10.0
 ```
 
 Next, install [Truffle](https://truffleframework.com/):
