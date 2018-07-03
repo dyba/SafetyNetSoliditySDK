@@ -1,0 +1,14 @@
+{
+    "package_name": "sagewise",
+    "version": "0.1.0",
+    "description": "The safety net for smart contracts",
+    "authors": [
+        "Dan Rice <dan@sagewise.io>"
+    ],
+    "keywords": [
+        "sagewise"
+    ],
+    "dependencies": {
+    },
+    "license": "MIT"
+}
